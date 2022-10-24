@@ -6,7 +6,7 @@ const Banner = () => {
 		<>
 		
 		<div className='banner__box'>
-		<video className='huj'/>  {/*src={video} autoPlay loop muted*/}
+		<video className='huj' src={"../../public/video.mp4"} autoPlay loop muted/>  
 				<div className='test'>
 					<h1 className='banner__text1'>8K STUDIO</h1>
 					<h2 className='banner__text2'>PRODUKCJA FILMOWA I TELEWIZYJNA</h2></div>

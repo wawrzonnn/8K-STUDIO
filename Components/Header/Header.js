@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
 import NavBarBtn from '../../8K-STUDIO/Hooks/NavBarBtn';
-import companyLogo from '../../public/produkcja-filmow-jelenia-gora.jpg' ;
+// import companyLogo from '../../public/produkcja-filmow-jelenia-gora.jpg' ;
 
 
 
@@ -21,7 +21,7 @@ const Header = () => {
 				<div className='header__logo'>
 					<div>
 						<p className='header__logo--text'>8k.studio.pl</p>
-						<img className='header__logo--img header__logo--small' src={companyLogo} alt='8KSTUDIO.PL logo' />
+						<img className='header__logo--img header__logo--small' src={"../../public/produkcja-filmow-jelenia-gora.jpg"} alt='8KSTUDIO.PL logo' />
 						{/* <FontAwesomeIcon icon={faEnvelope}/>
 						<FontAwesomeIcon icon="fa-brands fa-instagram" /> */}
 					</div>
@@ -38,7 +38,7 @@ const Header = () => {
 					</a>
 					<a className='header__nav--item' href={'/'}>
 						PRODUKCJA <span>FILMÓW</span>
-					</a><img className='header__logo--img header__logo--mid' src={companyLogo} alt='8KSTUDIO.PL logo' />
+					</a><img className='header__logo--img header__logo--mid' src={"../../public/produkcja-filmow-jelenia-gora.jpg"} alt='8KSTUDIO.PL logo' />
 					<a className='header__nav--item' href={'/'}>
 						USŁUGI <span>LOTNICZE</span>
 					</a>

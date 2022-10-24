@@ -11,8 +11,6 @@ const About = () => {
 					hendrerit. Aliquam gravida orci augue, vel ullamcorper magna commodo et. Fusce consectetur, nisl volutpat
 					pharetra consectetur, massa sapien porta dolor{' '}
 				</p>
-				<p>hujtam</p>
-				<p>asdasdadas</p>
 			</div>
 		</>
 	)

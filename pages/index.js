@@ -1,7 +1,7 @@
 import Header from "../Components/Header/Header";
 import Banner from "../Components/Banner/Banner";
 import About from "../Components/About/About";
-
+import Newsletter from "../Components/Newsletter/Newsletter";
 
 export default function Home() {
 	return (
@@ -9,7 +9,7 @@ export default function Home() {
 		<Header />
 		<Banner />
 		<About />
-			<div className='test'>test</div>
+		<Newsletter />
 		</>
 	)
 }
