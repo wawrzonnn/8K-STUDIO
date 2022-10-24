@@ -1,6 +1,7 @@
 
 
 .test {
+	background: url(../../public/produkcja-filmow-jelenia-gora.jpg);
 	text-align: center;
 	width: 100%;
 	margin-top: -35rem;
@@ -12,7 +13,7 @@
 		display:none; // ustawic klase mala i srednia dla h1 w banner i h2. inaczej sie wyswietlaja
 	}
 }
-.huj {
+.test2 {
 	@include small {
 		display: none;;
 	}
@@ -21,7 +22,6 @@
 	display: flex;
 	object-fit: cover;
 	position: relative;
-	background-color: deepskyblue;
 	// margin-top: 200px;
 }
 .banner__box {

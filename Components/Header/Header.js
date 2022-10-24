@@ -21,7 +21,7 @@ const Header = () => {
 				<div className='header__logo'>
 					<div>
 						<p className='header__logo--text'>8k.studio.pl</p>
-						<img className='header__logo--img header__logo--small' src={"../../public/produkcja-filmow-jelenia-gora.jpg"} alt='8KSTUDIO.PL logo' />
+						<img className='header__logo--img header__logo--small' src={'/8kstudio/public/produkcja-filmow-jelenia-gora.jpg'} alt='8KSTUDIO.PL logo' />
 						{/* <FontAwesomeIcon icon={faEnvelope}/>
 						<FontAwesomeIcon icon="fa-brands fa-instagram" /> */}
 					</div>
