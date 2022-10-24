@@ -1,0 +1,83 @@
+
+
+.test {
+	text-align: center;
+	width: 100%;
+	margin-top: -35rem;
+	position: absolute;
+	// top: 0;
+	left: 0;
+	z-index: 100;
+	@include small {
+		display:none; // ustawic klase mala i srednia dla h1 w banner i h2. inaczej sie wyswietlaja
+	}
+}
+.huj {
+	@include small {
+		display: none;;
+	}
+	width: 100%;
+	height: 100%;
+	display: flex;
+	object-fit: cover;
+	position: relative;
+	background-color: deepskyblue;
+	// margin-top: 200px;
+}
+.banner__box {
+	@include small {
+		background-image: url(../../public/banner4.jpg);
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		width: 100%;
+		height: 40rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	}
+	width: 100%;
+	@include medium {
+		height: 60rem;
+	}
+}
+
+.banner__text1 {
+	font-family: $monst;
+	font-size: 7rem;
+	text-align: center;
+	color: white;
+	margin-bottom: 1rem;
+	transition: 0.5s;
+	font-weight: 100;
+
+	@include medium {
+		font-size: 8rem;
+		letter-spacing: 0.5rem;
+        font-weight: 100;
+	}
+	@include large {
+		font-size: 11rem;
+		letter-spacing: 1.5rem;
+		font-weight: 100;
+	}
+}
+
+.banner__text2 {
+	font-family: $oswald;
+	font-size: 1.6rem;
+	color: white;
+	transition: 0.5s;
+	font-weight: 200;
+
+	@include medium {
+		font-size: 2rem;
+		letter-spacing: 0.5rem;
+	}
+	@include large {
+		font-size: 2rem;
+		letter-spacing: 1rem;
+		font-weight: 100;
+	}
+}

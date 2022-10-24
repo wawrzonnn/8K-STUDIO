@@ -1,0 +1,190 @@
+
+.header__box {
+	width: 100%;
+	display: block;
+	// position: relative;
+	background-color: $dark;
+	transition: ease height 0.5s;
+	height: 13rem; //menuActive nie ma indexu jak nie ustawie na sztyno wysokosci
+	@include medium {
+		height: 7rem;
+		position: fixed;
+		top: 0;
+		z-index: 300;
+	}
+}
+
+.header__logo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 2rem;
+	font-family: $oswald;
+	&--text {
+		font-family: $logo;
+		font-weight: 500;
+		color: white;
+		position: absolute;
+		left: 2rem;
+		top: 2rem;
+		transition: ease font-size 0.5s;
+
+		@include medium {
+			transition: 0.5s;
+			display: none;
+		}
+	}
+}
+
+.header__logo--img {
+	border-radius: 50%;
+	border: 1px solid $dark;
+	align-items: center;
+	transform: rotate(7deg);
+}
+.header__logo--mid {
+	display: none;
+	width: 6rem;
+	height: 6rem;
+	margin-top: 0.7rem;
+	@include medium {
+		display: block;
+	}
+}
+
+.header__logo--small {
+	width: 8rem;
+	height: 8rem;
+	transition: 0.5s;
+	margin-top: 0.9rem;
+	@include medium {
+		display: none;
+	}
+}
+
+.header__nav {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	background-color: black;
+	opacity: 0.85;
+	//z-index: 999;
+	@include small {
+		display: none;
+	}
+	@include medium {
+		display: flex;
+		flex-direction: row;
+		width: 100%;
+		background-color: transparent;
+	}
+	&--item {
+		opacity: 1;
+		color: white;
+
+		margin: 1.5rem;
+		font-size: 1.5rem;
+		//letter-spacing: 1px;
+		text-decoration: none;
+		text-align: center;
+		font-family: $monst;
+		transition: ease margin 0.5s;
+		transition: ease font-size 0.5s;
+		@include medium {
+			margin: 0.7rem;
+			font-size: 0.8rem;
+			font-weight: 200;
+		}
+		@include large {
+			margin: 1.8rem;
+			font-size: 1rem;
+			font-weight: 200;
+		}
+
+		&:hover {
+			color: tomato;
+			@include small {
+				color:white;
+			}
+		}
+	}
+}
+
+span {
+	display: block; //ustawić width elementom 
+}
+
+.nav--item-1 {
+	@include small {
+		margin-top: 1rem;
+	}
+}
+
+//---HAMBURGER---//
+.header__hamburger--box {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.hamburger-menu {
+	margin: 0.5rem;
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: space-between;
+	height: 2.5rem;
+	width: 2.5rem;
+	cursor: pointer;
+	@include medium {
+		display: none;
+	}
+}
+.bar-top,
+.bar-middle,
+.bar-bottom {
+	height: 5px;
+	background: white;
+	border-radius: 5px;
+	margin: 3px 0;
+	transform-origin: left;
+	transition: all 0.5s;
+}
+
+//---HAMBURGER ONCLICK---//
+.btnActive {
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+	& > .bar-top {
+		transform: rotate(45deg);
+	}
+	& > .bar-middle {
+		transform: translateX(1rem);
+		opacity: 0;
+	}
+	& > .bar-bottom {
+		transform: rotate(-45deg);
+	}
+}
+
+.menuActive {
+	//jak dac transition zeby menu wjechalo powoli
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding-bottom: 100%;
+	transition: 3s; // niet dziala
+	//height: 100vh; jak rozciagnac opacity na cala wysokosc zawartosci
+	//z-index: 999;
+	@include medium {
+		display: flex;
+		flex-direction: row;
+		width: 100%;
+		background-color: transparent;
+	}
+}
