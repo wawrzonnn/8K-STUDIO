@@ -1,4 +1,3 @@
 export default function handler(req, res) {
-    res.status(200).json({ name: 'Newsletter API Route' })
-  }
-  
+	res.status(200).json({ name: 'Newsletter API Route' })
+}

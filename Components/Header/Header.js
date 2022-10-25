@@ -1,27 +1,28 @@
 import React from 'react'
 import { useState } from 'react'
-import NavBarBtn from '../../8K-STUDIO/Hooks/NavBarBtn';
+import NavBarBtn from '../../8K-STUDIO/Hooks/NavBarBtn'
 // import companyLogo from '../../public/produkcja-filmow-jelenia-gora.jpg' ;
 
-
-
-
 const Header = () => {
-	const [navBtn, setnavBtn] = useState(false) 
+	const [navBtn, setnavBtn] = useState(false)
 	const [navMenu, setnavMenu] = useState(false)
 	const navBtnClick = () => {
 		setnavBtn(btn => !btn)
 		setnavMenu(Menu => !Menu)
 	}
 	let btnCheck = navBtn ? 'btnActive' : 'btnInactive'
-	let menuCheck = navMenu ? 'menuActive' : 'menuInactive'  
+	let menuCheck = navMenu ? 'menuActive' : 'menuInactive'
 	return (
 		<>
 			<div className='header__box'>
 				<div className='header__logo'>
 					<div>
 						<p className='header__logo--text'>8k.studio.pl</p>
-						<img className='header__logo--img header__logo--small' src={'/8kstudio/public/produkcja-filmow-jelenia-gora.jpg'} alt='8KSTUDIO.PL logo' />
+						<img
+							className='header__logo--img header__logo--small'
+							src={'/8kstudio/public/produkcja-filmow-jelenia-gora.jpg'}
+							alt='8KSTUDIO.PL logo'
+						/>
 						{/* <FontAwesomeIcon icon={faEnvelope}/>
 						<FontAwesomeIcon icon="fa-brands fa-instagram" /> */}
 					</div>
@@ -38,7 +39,12 @@ const Header = () => {
 					</a>
 					<a className='header__nav--item' href={'/'}>
 						PRODUKCJA <span>FILMÓW</span>
-					</a><img className='header__logo--img header__logo--mid' src={"../../public/produkcja-filmow-jelenia-gora.jpg"} alt='8KSTUDIO.PL logo' />
+					</a>
+					<img
+						className='header__logo--img header__logo--mid'
+						src={'../../public/produkcja-filmow-jelenia-gora.jpg'}
+						alt='8KSTUDIO.PL logo'
+					/>
 					<a className='header__nav--item' href={'/'}>
 						USŁUGI <span>LOTNICZE</span>
 					</a>
@@ -64,4 +70,4 @@ const Header = () => {
 	)
 }
 
-export default Header;
+export default Header

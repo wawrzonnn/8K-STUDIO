@@ -1,33 +1,34 @@
 import React from 'react'
-import { useState,useEffect } from 'react'
-
+import { useState, useEffect } from 'react'
 
 const Newsletter = () => {
 	const [email, setEmail] = useState('')
-	const [newsletterDisplay, setNewsletterDisplay] = useState("");
+	const [newsletterDisplay, setNewsletterDisplay] = useState('')
 	useEffect(() => {
 		setTimeout(() => {
-		  setNewsletterDisplay("display");
-		}, 5000);
-	  }, []);
+			setNewsletterDisplay('display')
+		}, 5000)
+	}, [])
 
 	const submitEmail = async () => {
-		const response = await fetch('http://localhost:3001/api/newsletter', 
-			{
-				method: 'POST',
-				body: JSON.stringify({ email }),
-				headers: { 'Content-Type': 'application/json' }
-			})
-			 const { email } = await response.json()
-			 console.log(email);
+		const response = await fetch('http://localhost:3001/api/newsletter', {
+			method: 'POST',
+			body: JSON.stringify({ email }),
+			headers: { 'Content-Type': 'application/json' },
+		})
+		const { email } = await response.json()
+		console.log(email)
+		setNewsletterDisplay('')
+	}
 
-			
+	const xMarkNewsletter = () => {
+		setNewsletterDisplay('')
 	}
 
 	return (
 		<div className='newsletter__background'>
 			<div className={`newsletter__box ${newsletterDisplay}`}>
-				<div className='newsletter__xmark'>X</div>
+				<div className='newsletter__xmark' onClick={xMarkNewsletter}>X</div>
 				<h2 className='newsletter__txt newsletter__txt--title'>Bądź na bieżąco!</h2>
 				<p className='newsletter__txt newsletter__txt--text'>
 					Zapisz się do newslettera i bądź na bieżąco z naszymi relacjami
