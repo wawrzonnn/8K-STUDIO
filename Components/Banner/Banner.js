@@ -10,6 +10,7 @@ const Banner = () => {
 				<div className='test'>
 					<h1 className='banner__text1'>8K STUDIO</h1>
 					<h2 className='banner__text2'>PRODUKCJA FILMOWA I TELEWIZYJNA</h2></div>
+					<img src='../../public/produkcja-filmow-jelenia-gora.jpg'/>
 			</div>
 		</>
 	)
