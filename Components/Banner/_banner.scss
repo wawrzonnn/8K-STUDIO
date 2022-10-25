@@ -1,6 +1,6 @@
 
 
-.test {
+.banner__text--box {
 	background: url(../../public/produkcja-filmow-jelenia-gora.jpg);
 	text-align: center;
 	width: 100%;
@@ -10,10 +10,15 @@
 	left: 0;
 	z-index: 100;
 	@include small {
-		display:none; // ustawic klase mala i srednia dla h1 w banner i h2. inaczej sie wyswietlaja
+		background: transparent;
+		position: relative;
+		margin: 0;
+		opacity: 0.3;
+		z-index: 0;
+		 // ustawic klase mala i srednia dla h1 w banner i h2. inaczej sie wyswietlaja
 	}
 }
-.test2 {
+.banner__video {
 	@include small {
 		display: none;;
 	}
@@ -23,6 +28,7 @@
 	object-fit: cover;
 	position: relative;
 	// margin-top: 200px;
+
 }
 .banner__box {
 	@include small {
@@ -44,6 +50,7 @@
 }
 
 .banner__text1 {
+	position: relative;
 	font-family: $monst;
 	font-size: 7rem;
 	text-align: center;
@@ -63,6 +70,7 @@
 		font-weight: 100;
 	}
 }
+
 
 .banner__text2 {
 	font-family: $oswald;

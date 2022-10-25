@@ -178,7 +178,9 @@ span {
 	justify-content: center;
 	flex-direction: column;
 	padding-bottom: 100%;
-	transition: 3s; // niet dziala
+	transition: 3s;
+	z-index: 2;
+	position: absolute; // niet dziala
 	//height: 100vh; jak rozciagnac opacity na cala wysokosc zawartosci
 	//z-index: 999;
 	@include medium {
