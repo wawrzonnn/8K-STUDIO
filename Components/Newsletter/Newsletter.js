@@ -1,9 +1,15 @@
 import React from 'react'
-import { useState } from 'react'
-// const API = 'http://localhost:3000'
+import { useState,useEffect } from 'react'
+
 
 const Newsletter = () => {
 	const [email, setEmail] = useState('')
+	const [newsletterDisplay, setNewsletterDisplay] = useState("");
+	useEffect(() => {
+		setTimeout(() => {
+		  setNewsletterDisplay("display");
+		}, 5000);
+	  }, []);
 
 	const submitEmail = async () => {
 		const response = await fetch('http://localhost:3001/api/newsletter', 
@@ -14,13 +20,13 @@ const Newsletter = () => {
 			})
 			 const { email } = await response.json()
 			 console.log(email);
-	
+
 			
 	}
 
 	return (
 		<div className='newsletter__background'>
-			<div className='newsletter__box'>
+			<div className={`newsletter__box ${newsletterDisplay}`}>
 				<div className='newsletter__xmark'>X</div>
 				<h2 className='newsletter__txt newsletter__txt--title'>Bądź na bieżąco!</h2>
 				<p className='newsletter__txt newsletter__txt--text'>
