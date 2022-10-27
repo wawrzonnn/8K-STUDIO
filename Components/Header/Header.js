@@ -1,7 +1,5 @@
 import React from 'react'
 import { useState } from 'react'
-import NavBarBtn from '../../8K-STUDIO/Hooks/NavBarBtn'
-// import companyLogo from '../../public/produkcja-filmow-jelenia-gora.jpg' ;
 
 const Header = () => {
 	const [navBtn, setnavBtn] = useState(false)
@@ -20,7 +18,7 @@ const Header = () => {
 						<p className='header__logo--text'>8k.studio.pl</p>
 						<img
 							className='header__logo--img header__logo--small'
-							src={'/8kstudio/public/produkcja-filmow-jelenia-gora.jpg'}
+							src={'/produkcja-filmow-jelenia-gora.jpg'}
 							alt='8KSTUDIO.PL logo'
 						/>
 						{/* <FontAwesomeIcon icon={faEnvelope}/>
@@ -42,7 +40,7 @@ const Header = () => {
 					</a>
 					<img
 						className='header__logo--img header__logo--mid'
-						src={'../../public/produkcja-filmow-jelenia-gora.jpg'}
+						src={'/produkcja-filmow-jelenia-gora.jpg'}
 						alt='8KSTUDIO.PL logo'
 					/>
 					<a className='header__nav--item' href={'/'}>

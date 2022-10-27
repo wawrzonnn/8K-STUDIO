@@ -1,4 +1,6 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
+
 
 
 const About = () => {
@@ -10,8 +12,9 @@ const About = () => {
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus consectetur quam non sapien rutrum, vel
 					dictum sapien scelerisque. Fusce feugiat dolor ut dolor rutrum faucibus. Sed dictum porttitor nisi molestie
 					hendrerit. Aliquam gravida orci augue, vel ullamcorper magna commodo et. Fusce consectetur, nisl volutpat
-					pharetra consectetur, massa sapien porta dolor{' '}
+					pharetra consectetur, massa sapien porta dolor
 				</p>
+				<a href="" className='about__more'>SPRAWDŹ WIĘCEJ</a>
 			</div>
 		</>
 	)

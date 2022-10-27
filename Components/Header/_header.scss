@@ -103,7 +103,7 @@
 		}
 
 		&:hover {
-			color: tomato;
+			color: $lightred;
 			@include small {
 				color: white;
 			}
