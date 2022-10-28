@@ -38,11 +38,9 @@ const Header = () => {
 					<a className='header__nav--item' href={'/'}>
 						PRODUKCJA <span>FILMÓW</span>
 					</a>
-					<img
-						className='header__logo--img header__logo--mid'
-						src={'/produkcja-filmow-jelenia-gora.jpg'}
-						alt='8KSTUDIO.PL logo'
-					/>
+					<a className='header__nav--item' href={'/'}>
+						USŁUGI <span>OPERATORSKIE</span>
+					</a>
 					<a className='header__nav--item' href={'/'}>
 						USŁUGI <span>LOTNICZE</span>
 					</a>

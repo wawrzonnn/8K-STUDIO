@@ -1,20 +1,20 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
 
-
-
 const About = () => {
 	return (
 		<>
-			<div className='about__box'>
-				<p className='about__title'>O NAS</p>
-				<p className='about__content--text'>
+			<div className='global__box'>
+				<p className='global__title'>O NAS</p>
+				<p className='global__content--text'>
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus consectetur quam non sapien rutrum, vel
 					dictum sapien scelerisque. Fusce feugiat dolor ut dolor rutrum faucibus. Sed dictum porttitor nisi molestie
 					hendrerit. Aliquam gravida orci augue, vel ullamcorper magna commodo et. Fusce consectetur, nisl volutpat
 					pharetra consectetur, massa sapien porta dolor
 				</p>
-				<a href="" className='about__more'>SPRAWDŹ WIĘCEJ</a>
+				<a href='' className='about__more'>
+					SPRAWDŹ WIĘCEJ
+				</a>
 			</div>
 		</>
 	)
