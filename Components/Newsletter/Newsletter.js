@@ -18,7 +18,7 @@ const Newsletter = () => {
 		})
 		const { email } = await response.json()
 		console.log(email)
-		setNewsletterDisplay('')
+		// setNewsletterDisplay('')
 	}
 
 	const xMarkNewsletter = () => {
