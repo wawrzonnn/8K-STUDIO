@@ -1,0 +1,8 @@
+.film__more {
+    @include small {
+        border: 0;
+        &:hover {
+            scale: 1;
+        }
+    }
+}

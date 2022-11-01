@@ -15,9 +15,9 @@ const Sky = () => {
 					<div className='global__images--medium'>
 						<div className='global__image--parent'>
 							<a href=''>
-								<img className='global__images--img' src='/dron1.jpg'></img>
+								<img className='global__images--img images__twice' src='/dron.jpg'></img>
 							</a>
-							<p className='global__title global__images--imgtxt'>Sky is the limit</p>
+							<p className='global__title global__images--imgtxt'>Zdjęcia Lotnicze</p>
 
 							<a href='' className='global__images--title'>
 								Więcej

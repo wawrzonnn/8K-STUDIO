@@ -5,7 +5,7 @@ const Production = () => {
   	<>
 			<div className='global__box'>
 				<img className='video__image' src='/film.jpg'></img>
-				<video className='video__hero' src={'/film.mp4'} autoPlay loop muted />
+				<video className='video__hero' src={'/dron.mp4'} autoPlay loop muted />
 				{/* <h2 className='video__hero--title1'>Lorem Ipsum</h2>
 				<h2 className='video__hero--title2'>Lorem Ipsum</h2> */}
 			</div>
@@ -19,7 +19,7 @@ const Production = () => {
 					<div className='global__images--medium'>
 						<div className='global__image--parent'>
 							<a href=''>
-								<img className='global__images--img' src='/film1.jpg'></img>
+								<img className='global__images--img images__twice' src='/produkcja1.jpg'></img>
 							</a>
 							<p className='global__title global__images--imgtxt'>Montaż</p>
 
@@ -27,7 +27,7 @@ const Production = () => {
 						</div>
 						<div className='global__image--parent'>
 							<a href=''>
-								<img className='global__images--img' src='/film2.jpg'></img>
+								<img className='global__images--img images__twice' src='/produkcja2.jpg'></img>
 							</a>
 							<p className='global__title global__images--imgtxt'>Korekcja Barwna</p>
 							<a href='' className='global__images--title'>Więcej</a>

@@ -28,6 +28,7 @@
 	display: flex;
 	object-fit: cover;
 	width: 100%;
+	height: 50rem;
     border-bottom: 1px solid $light;
 	@include small {
 		display: none;
@@ -66,6 +67,10 @@
 	width: 100%;
 	border-top: 1px solid $lightred;
 	// border-bottom: 1px solid $light;
+}
+
+.background__light {
+	background-color: #1D1C1A;
 }
 
 .global__title {
@@ -133,7 +138,7 @@
 	border-radius: 10px;
 	margin-bottom: 1.5rem;
 	width: 30rem;
-	height: 90%;
+	height: 29rem;
     &:hover {
 	@include large { 
         border: 1px solid tomato; 
@@ -147,6 +152,29 @@
 		transition: 0.5s;
 		width: 20rem;
 	}
+	@include small {
+		height: 27rem;
+		width: 26rem;
+		margin: 0;
+	}
+}
+
+.images__twice {
+	width: 40rem;
+	height: 25rem;
+	
+	@include medium {
+		width: 25rem;
+	}
+	@include large {
+		transition: 0.5s;
+		width: 40rem;
+	}
+	@include small {
+		height: 27rem;
+		width: 28rem;
+	}
+	
 }
 
 .global__images--imgtxt {
@@ -158,15 +186,14 @@
 
 .global__images--title {
 	text-align: center;
-	margin: 0 0 2.5rem 0;
-	color: $light;
+	margin: 0.5rem 0 2.5rem 0;
+	color: tomato;
 	letter-spacing: 0.1rem;
 	font-family: $oswald;
-	font-weight: 100;
+	font-weight: 400;
 	display: block;
 	text-decoration: none;
-}
-
-.huj {
-    margin-bottom: 0;
+	@include large {
+		display: none;
+	}
 }

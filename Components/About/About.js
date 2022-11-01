@@ -13,7 +13,7 @@ const About = () => {
 					hendrerit. Aliquam gravida orci augue, vel ullamcorper magna commodo et. Fusce consectetur, nisl volutpat
 					pharetra consectetur, massa sapien porta dolor
 				</p>
-				<FontAwesomeIcon icon={faHSquare}></FontAwesomeIcon>
+				{/* <FontAwesomeIcon icon={faHSquare}></FontAwesomeIcon> */}
 				<a href='' className='about__more'>
 					SPRAWDŹ WIĘCEJ
 				</a>
