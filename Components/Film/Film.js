@@ -20,7 +20,7 @@ const Film = () => {
 					<div className='global__images--medium'>
 						<div className='global__image--parent'>
 							<a href=''>
-								<img className='global__images--img images__twice' src='/film.jpg'></img>
+								<img className='global__images--img images__twice' src='/film6.jpg'></img>
 							</a>
 							<p className='global__title global__images--imgtxt'>Film Reklamowy</p>
 
