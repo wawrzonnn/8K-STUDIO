@@ -1,8 +1,8 @@
 import React from 'react'
 
 const Production = () => {
-  return (
-  	<>
+	return (
+		<>
 			<div className='global__box'>
 				<img className='video__image' src='/film.jpg'></img>
 				<video className='video__hero' src={'/produkcja.mp4'} autoPlay loop muted />
@@ -23,20 +23,24 @@ const Production = () => {
 							</a>
 							<p className='global__title global__images--imgtxt'>Montaż</p>
 
-							<a href='' className='global__images--title'>Więcej</a>
+							<a href='' className='global__images--title'>
+								Więcej
+							</a>
 						</div>
 						<div className='global__image--parent'>
 							<a href=''>
 								<img className='global__images--img images__twice' src='/produkcja2.jpg'></img>
 							</a>
 							<p className='global__title global__images--imgtxt'>Korekcja Barwna</p>
-							<a href='' className='global__images--title'>Więcej</a>
+							<a href='' className='global__images--title'>
+								Więcej
+							</a>
 						</div>
 					</div>
 				</div>
 			</div>
 		</>
-  )
+	)
 }
 
 export default Production

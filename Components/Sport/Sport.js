@@ -1,4 +1,6 @@
 import React from 'react'
+import Link from 'next/link'
+
 
 const Sport = () => {
 	return (
@@ -30,9 +32,9 @@ const Sport = () => {
 							</a>
 						</div>
 						<div className='global__image--parent'>
-							<a href=''>
+							<Link href='/biegi'>
 								<img className='global__images--img' src='/sport2.jpg'></img>
-							</a>
+							</Link>
 							<p className='global__title global__images--imgtxt'>Rowery</p>
 							<a href='' className='global__images--title'>
 								Więcej

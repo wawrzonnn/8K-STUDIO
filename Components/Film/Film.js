@@ -24,18 +24,22 @@ const Film = () => {
 							</a>
 							<p className='global__title global__images--imgtxt'>Film Reklamowy</p>
 
-							<a href='' className='global__images--title'>Więcej</a>
+							<a href='' className='global__images--title'>
+								Więcej
+							</a>
 						</div>
 						<div className='global__image--parent'>
 							<a href=''>
 								<img className='global__images--img images__twice' src='/film5.jpg'></img>
 							</a>
 							<p className='global__title global__images--imgtxt'>Reportaż</p>
-							<a href='' className='global__images--title'>Więcej</a>
+							<a href='' className='global__images--title'>
+								Więcej
+							</a>
 						</div>
 					</div>
 				</div>
-					<p className='about__more film__more '>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+				<p className='about__more film__more '>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 			</div>
 		</>
 	)

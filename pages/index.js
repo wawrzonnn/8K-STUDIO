@@ -8,6 +8,10 @@ import Media from '../Components/Media/Media'
 import Operator from '../Components/Operator/Operator'
 import Sky from '../Components/Sky/Sky'
 import Production from '../Components/Production/Production'
+import Footer from '../Components/Footer/Footer'
+
+
+
 
 export default function Home() {
 	return (
@@ -22,6 +26,7 @@ export default function Home() {
 			<Sky />
 			<Production />
 			<Newsletter />
+			<Footer />
 		</>
 	)
 }
