@@ -43,7 +43,7 @@ const Newsletter = () => {
 						value={email}
 						onChange={e => setEmail(e.target.value)}></input>
 					<button onClick={submitEmail} className='newsletter__submit--btn'>
-						WYŚLIJ
+						WYŚLIJ trttttttrtyrasddsadsasdaasdasdasdasd
 					</button>
 				</div>
 			</div>
