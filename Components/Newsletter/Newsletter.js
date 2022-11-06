@@ -16,8 +16,10 @@ const Newsletter = () => {
 			body: JSON.stringify({ email }),
 			headers: { 'Content-Type': 'application/json' },
 		})
+
 		const { email } = await response.json()
 		console.log(email)
+
 		// setNewsletterDisplay('')
 	}
 
@@ -43,7 +45,7 @@ const Newsletter = () => {
 						value={email}
 						onChange={e => setEmail(e.target.value)}></input>
 					<button onClick={submitEmail} className='newsletter__submit--btn'>
-						WYŚLIJ trttttttrtyrasddsadsasdaasdasdasdasda
+						WYŚLIJ
 					</button>
 				</div>
 			</div>
