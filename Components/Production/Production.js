@@ -6,8 +6,8 @@ const Production = () => {
 			<div className='global__box'>
 				<img className='video__image' src='/film.jpg'></img>
 				<video className='video__hero' src={'/produkcja.mp4'} autoPlay loop muted />
-				{/* <h2 className='video__hero--title1'>Lorem Ipsum</h2>
-				<h2 className='video__hero--title2'>Lorem Ipsum</h2> */}
+				<h2 className='video__hero--title1'>Lorem Ipsum</h2>
+				<h2 className='video__hero--title2'>Lorem Ipsum</h2>
 			</div>
 			<div className='global__box'>
 				<h3 className='global__title'>POSTPRODUKCJA</h3>

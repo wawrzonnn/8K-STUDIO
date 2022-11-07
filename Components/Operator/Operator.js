@@ -6,6 +6,8 @@ const Operator = () => {
 			<div className='global__box'>
 				<img className='video__image operator__box--image' src='/operator.jpg'></img>
                 <video className='video__hero' src={'/operator.mp4'} autoPlay loop muted />
+				<h2 className='video__hero--title1'>Lorem Ipsum</h2>
+				<h2 className='video__hero--title2 operator__title2'>Lorem Ipsum</h2>
 				<h3 className='global__title'>USŁUGI OPERATORSKIE</h3>
 				<p className='global__content--text'>
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus consectetur quam non sapien rutrum, vel
