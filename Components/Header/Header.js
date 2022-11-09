@@ -29,11 +29,14 @@ const Header = () => {
 				<nav className={`header__nav ${menuCheck}`}>
 					<a className='header__nav--item nav--item-1' href={'/'}>
 						HOME
-					</a><Link href='/aboutus'>
-					<a className='header__nav--item' href={'/'}>
-						O NAS
-					</a></Link>
-					<a className='header__nav--item ' href={'/'}>
+					</a>
+					<Link href='/aboutus'>
+						<a className='header__nav--item' href={'/'}>
+							O NAS
+						</a>
+					</Link>
+
+					<a className='header__nav--item ' href={''}>
 						REPORTAŻ <span>SPORTOWY</span>
 					</a>
 					<a className='header__nav--item' href={'/'}>
@@ -50,10 +53,12 @@ const Header = () => {
 					</a>
 					<a className='header__nav--item' href={'/'}>
 						RENTAL
-					</a><Link href='/contact'>
-					<a className='header__nav--item' href={'/'}>
-						KONTAKT
-					</a></Link>
+					</a>
+					<Link href='/contact'>
+						<a className='header__nav--item' href={'/'}>
+							KONTAKT
+						</a>
+					</Link>
 				</nav>
 				<div className='header__hamburger--box'>
 					<div className={`hamburger-menu ${btnCheck}`} onClick={navBtnClick}>

@@ -4,7 +4,7 @@ import Link from 'next/link'
 const Film = () => {
 	return (
 		<>
-			<div className='global__box background__light'>
+			<div className='global__box '>
 				<img className='video__image' src='/film.jpg'></img>
 				<video className='video__hero' src={'/film.mp4'} autoPlay loop muted />
 				<h2 className='video__hero--title1'>Lorem Ipsum</h2>
@@ -22,7 +22,7 @@ const Film = () => {
 						<div className='global__image--parent'>
 							
 							<Link href='/advertising'>
-								<img className='global__images--img images__twice' src='/film6.jpg'></img>
+								<img className='global__images--img images__twice' src='/film6.jpg' alt='Nagrywanie filmu reklamowego'></img>
 							</Link>
 							<p className='global__title global__images--imgtxt'>Film Reklamowy</p>
 
