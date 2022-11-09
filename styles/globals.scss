@@ -11,6 +11,8 @@
 @import '../Components/Sky/sky';
 @import '../Components/Production/production';
 @import '../Components/Footer/footer';
+@import './pages';
+@import '../Components/Contact/contact';
 
 .video__box {
 	width: 100%;
@@ -88,10 +90,9 @@
 		display: flex;
 	}
 }
-	
 
 .operator__title2 {
-    color: white;
+	color: white;
 	bottom: 43rem;
 }
 
@@ -163,12 +164,12 @@
 }
 
 .global__images--img {
-	// margin: 0 2.5rem;
 	border: 1px solid $light;
 	border-radius: 10px;
 	margin-bottom: 1.5rem;
 	width: 30rem;
 	height: 29rem;
+	cursor: pointer;
 	&:hover {
 		@include large {
 			border: 1px solid tomato;

@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 import { useState } from 'react'
 
@@ -28,10 +29,10 @@ const Header = () => {
 				<nav className={`header__nav ${menuCheck}`}>
 					<a className='header__nav--item nav--item-1' href={'/'}>
 						HOME
-					</a>
+					</a><Link href='/aboutus'>
 					<a className='header__nav--item' href={'/'}>
 						O NAS
-					</a>
+					</a></Link>
 					<a className='header__nav--item ' href={'/'}>
 						REPORTAŻ <span>SPORTOWY</span>
 					</a>
@@ -49,10 +50,10 @@ const Header = () => {
 					</a>
 					<a className='header__nav--item' href={'/'}>
 						RENTAL
-					</a>
+					</a><Link href='/contact'>
 					<a className='header__nav--item' href={'/'}>
 						KONTAKT
-					</a>
+					</a></Link>
 				</nav>
 				<div className='header__hamburger--box'>
 					<div className={`hamburger-menu ${btnCheck}`} onClick={navBtnClick}>

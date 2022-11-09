@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 
 const Sky = () => {
 	return (
@@ -16,9 +17,9 @@ const Sky = () => {
 				<div className='global__images--box'>
 					<div className='global__images--medium'>
 						<div className='global__image--parent'>
-							<a href=''>
+							<Link href='/sky'>
 								<img className='global__images--img images__twice' src='/dron.jpg'></img>
-							</a>
+							</Link>
 							<p className='global__title global__images--imgtxt'>Zdjęcia Lotnicze</p>
 
 							<a href='' className='global__images--title'>

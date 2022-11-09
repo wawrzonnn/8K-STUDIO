@@ -1,7 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
 
-
 const Sport = () => {
 	return (
 		<>
@@ -22,9 +21,9 @@ const Sport = () => {
 				<div className='global__images--box'>
 					<div className='global__images--medium'>
 						<div className='global__image--parent'>
-							<a href=''>
+							<Link href='/runs'>
 								<img className='global__images--img' src='/sport1.jpg'></img>
-							</a>
+							</Link>
 							<p className='global__title global__images--imgtxt'>Biegi</p>
 
 							<a href='' className='global__images--title'>
@@ -32,7 +31,7 @@ const Sport = () => {
 							</a>
 						</div>
 						<div className='global__image--parent'>
-							<Link href='/biegi'>
+							<Link href='/bikes'>
 								<img className='global__images--img' src='/sport2.jpg'></img>
 							</Link>
 							<p className='global__title global__images--imgtxt'>Rowery</p>
@@ -43,9 +42,9 @@ const Sport = () => {
 					</div>
 					<div className='global__images--medium'>
 						<div className='global__image--parent'>
-							<a href=''>
+							<Link href='/triathlon'>
 								<img className='global__images--img' src='/sport3.jpg'></img>
-							</a>
+							</Link>
 							<p className='global__title global__images--imgtxt'>Triathlon</p>
 
 							<a href='' className='global__images--title'>
@@ -53,9 +52,9 @@ const Sport = () => {
 							</a>
 						</div>
 						<div className='global__image--parent'>
-							<a href=''>
+							<Link href='/other'>
 								<img className='global__images--img' src='/sport4.jpg'></img>
-							</a>
+							</Link>
 							<p className='global__title global__images--imgtxt'>Inne</p>
 
 							<a href='' className='global__images--title'>

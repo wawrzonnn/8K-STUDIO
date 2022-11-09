@@ -2,7 +2,7 @@ import React from 'react'
 import Header from '../Components/Header/Header'
 import Footer from '../Components/Footer/Footer'
 
-const triathlon = () => {
+const sky = () => {
 	return (
 		<>
 			<Header />
@@ -46,4 +46,4 @@ const triathlon = () => {
 	)
 }
 
-export default triathlon
+export default sky

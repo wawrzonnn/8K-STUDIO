@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 
 const Production = () => {
 	return (
@@ -18,9 +19,9 @@ const Production = () => {
 				<div className='global__images--box'>
 					<div className='global__images--medium'>
 						<div className='global__image--parent'>
-							<a href=''>
+							<Link href='/montage'>
 								<img className='global__images--img images__twice' src='/produkcja1.jpg'></img>
-							</a>
+							</Link>
 							<p className='global__title global__images--imgtxt'>Montaż</p>
 
 							<a href='' className='global__images--title'>
@@ -28,9 +29,9 @@ const Production = () => {
 							</a>
 						</div>
 						<div className='global__image--parent'>
-							<a href=''>
+						<Link href='/colorcorrection'>
 								<img className='global__images--img images__twice' src='/produkcja2.jpg'></img>
-							</a>
+							</Link>
 							<p className='global__title global__images--imgtxt'>Korekcja Barwna</p>
 							<a href='' className='global__images--title'>
 								Więcej

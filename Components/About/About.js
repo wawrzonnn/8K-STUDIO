@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
 import { faHSquare } from '@fortawesome/free-solid-svg-icons'
+import Link from 'next/link'
 
 const About = () => {
 	return (
@@ -14,9 +15,9 @@ const About = () => {
 					pharetra consectetur, massa sapien porta dolor
 				</p>
 				{/* <FontAwesomeIcon icon={faHSquare}></FontAwesomeIcon> */}
-				<a href='' className='about__more'>
-					SPRAWDŹ WIĘCEJ
-				</a>
+				<Link href='/aboutus'>
+					<p className='about__more'>SPRAWDŹ WIĘCEJ</p>
+				</Link>
 			</div>
 		</>
 	)

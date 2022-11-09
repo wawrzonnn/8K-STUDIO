@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 
 const Operator = () => {
 	return (
@@ -16,9 +17,9 @@ const Operator = () => {
 				<div className='global__images--box'>
 					<div className='global__images--medium'>
 						<div className='global__image--parent'>
-							<a href=''>
+							<Link href='/photos'>
 								<img className='global__images--img' src='/operator1.jpg'></img>
-							</a>
+							</Link>
 							<p className='global__title global__images--imgtxt'>Zdjęcia</p>
 
 							<a href='' className='global__images--title'>
@@ -26,9 +27,9 @@ const Operator = () => {
 							</a>
 						</div>
 						<div className='global__image--parent'>
-							<a href=''>
+						<Link href='/steadycam'>
 								<img className='global__images--img' src='/operator2.jpg'></img>
-							</a>
+							</Link>
 							<p className='global__title global__images--imgtxt'>Steadycam</p>
 							<a href='' className='global__images--title'>
 								Więcej
@@ -37,9 +38,9 @@ const Operator = () => {
 					</div>
 					<div className='global__images--medium'>
 						<div className='global__image--parent'>
-							<a href=''>
+						<Link href='/livestream'>
 								<img className='global__images--img' src='/operator3.jpg'></img>
-							</a>
+							</Link>
 							<p className='global__title global__images--imgtxt'>Live Stream</p>
 
 							<a href='' className='global__images--title'>
@@ -47,9 +48,9 @@ const Operator = () => {
 							</a>
 						</div>
 						<div className='global__image--parent'>
-							<a href=''>
+						<Link href='/hyperlapse'>
 								<img className='global__images--img' src='/operator4.jpg'></img>
-							</a>
+							</Link>
 							<p className='global__title global__images--imgtxt'>Hyperlapse, Timelapse</p>
 
 							<a href='' className='global__images--title'>
