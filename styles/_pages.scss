@@ -1,10 +1,24 @@
 .pages__margin--header {
     margin-top: 5rem;
     background-color: grey;
+    @include medium {
+        margin-top: 3rem;
+    }
+    @include small {
+        margin-top: 0rem;
+    }
+}
+
+.huj {
+    margin-top: 15rem;
 }
 
 .pages__video {
     margin-bottom: 10rem;
+    @include small {
+        max-width: 450px;
+        height: 30rem;
+    }
 }
 
 .pages__contact--box {

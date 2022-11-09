@@ -7,8 +7,8 @@ const aboutus = () => {
 		<>
 			<Header />
 			<div className='global__box pages__margin--header'>
-				<h3 className='global__title'>LOREM IPSUM</h3>
-				<p className='global__content--text'>
+				{/* <h3 className='global__title huj'>LOREM IPSUM</h3> */}
+				<p className='global__content--text huj'>
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus consectetur quam non sapien rutrum, vel
 					dictum sapien scelerisque. Fusce feugiat dolor ut dolor rutrum faucibus. Sed dictum porttitor nisi molestie
 					hendrerit. Aliquam gravida orci augue, vel ullamcorper magna commodo et.
