@@ -1,5 +1,10 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
+// import { createClient } from '@supabase/supabase-js'
+
+const supabaseUrl = 'https://yzkgiuutarllvikdabbv.supabase.co'
+const supabaseKey = process.env.SUPABASE_KEY
+// const supabase = createClient(supabaseUrl, supabaseKey)
 
 const Newsletter = () => {
 	const [email, setEmail] = useState('')
@@ -11,7 +16,7 @@ const Newsletter = () => {
 	}, [])
 
 	const submitEmail = async () => {
-		const response = await fetch('http://localhost:3001/api/newsletter', {
+		const response = await fetch('https://reqres.in/api/users', {
 			method: 'POST',
 			body: JSON.stringify({ email }),
 			headers: { 'Content-Type': 'application/json' },

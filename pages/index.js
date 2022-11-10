@@ -10,6 +10,7 @@ import Sky from '../Components/Sky/Sky'
 import Production from '../Components/Production/Production'
 import Footer from '../Components/Footer/Footer'
 import Contact from '../Components/Contact/Contact'
+import AddCar from '../Components/huj/huj'
 
 
 
@@ -29,6 +30,7 @@ export default function Home() {
 			<Production />
 			<Newsletter />
 			<Contact />
+			<AddCar />
 			<Footer />
 		</>
 	)
