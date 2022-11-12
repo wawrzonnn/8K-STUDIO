@@ -27,7 +27,9 @@ const Header = () => {
 					</div>
 				</div>
 				<nav className={`header__nav ${menuCheck}`}>
-					<p className='header__nav--item nav--item-1'>HOME</p>
+					<Link href='/'>
+						<p className='header__nav--item nav--item-1'>HOME</p>
+					</Link>
 					<Link href='/aboutus'>
 						<p className='header__nav--item'>O NAS</p>
 					</Link>
