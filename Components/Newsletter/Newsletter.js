@@ -1,13 +1,9 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
-// import { createClient } from '@supabase/supabase-js'
 
-const supabaseUrl = 'https://yzkgiuutarllvikdabbv.supabase.co'
-const supabaseKey = process.env.SUPABASE_KEY
-// const supabase = createClient(supabaseUrl, supabaseKey)
-
-const Newsletter = () => {
+export default function Newsletter () {
 	const [email, setEmail] = useState('')
+	const [response, setResponse] = useState()
 	const [newsletterDisplay, setNewsletterDisplay] = useState('')
 	useEffect(() => {
 		setTimeout(() => {
@@ -15,21 +11,30 @@ const Newsletter = () => {
 		}, 5000)
 	}, [])
 
-	const submitEmail = async () => {
-		const response = await fetch('https://reqres.in/api/users', {
-			method: 'POST',
-			body: JSON.stringify({ email }),
-			headers: { 'Content-Type': 'application/json' },
-		})
-
-		const { email } = await response.json()
-		console.log(email)
-
-		// setNewsletterDisplay('')
-	}
-
 	const xMarkNewsletter = () => {
 		setNewsletterDisplay('')
+	}
+
+	const emailChangeHandler = e => {
+		setEmail(e.target.value)
+	}
+
+	const submitHandler = async e => {
+		e.preventDefault()
+		const body = JSON.stringify({
+			email,
+		})
+
+		const res = await fetch('/api/hello', {
+			method: 'POST',
+			headers: {
+				Accept: 'application/json',
+				'Content-Type': 'application/json',
+			},
+			body,
+		})
+		const data = await res.json()
+		setResponse(data)
 	}
 
 	return (
@@ -42,20 +47,20 @@ const Newsletter = () => {
 				<p className='newsletter__txt newsletter__txt--text'>
 					Zapisz się do newslettera i bądź na bieżąco z naszymi relacjami
 				</p>
-				<div className='newsletter__submit'>
+				<form className='newsletter__submit' onSubmit={submitHandler}>
 					<input
 						className='newsletter__submit--email'
-						type={'text'}
 						placeholder={'Wpisz swój e-mail'}
+						type='email'
 						value={email}
-						onChange={e => setEmail(e.target.value)}></input>
-					<button onClick={submitEmail} className='newsletter__submit--btn'>
+						name='email'
+						onChange={emailChangeHandler}
+					/>
+					<button className='newsletter__submit--btn' type='submit'>
 						WYŚLIJ
 					</button>
-				</div>
+				</form>
 			</div>
 		</div>
 	)
 }
-
-export default Newsletter
