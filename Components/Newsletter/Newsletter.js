@@ -3,8 +3,9 @@ import { useState, useEffect } from 'react'
 
 export default function Newsletter () {
 	const [email, setEmail] = useState('')
-	const [response, setResponse] = useState()
+	// const [response, setResponse] = useState()
 	const [newsletterDisplay, setNewsletterDisplay] = useState('')
+	
 	useEffect(() => {
 		setTimeout(() => {
 			setNewsletterDisplay('display')
@@ -33,8 +34,8 @@ export default function Newsletter () {
 			},
 			body,
 		})
-		const data = await res.json()
-		setResponse(data)
+		// const data = await res.json()
+		// setResponse(data)
 	}
 
 	return (
