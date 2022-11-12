@@ -41,7 +41,7 @@ const Film = () => {
 						</div>
 					</div>
 				</div>
-				<p className='about__more film__more '>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+				<p className='about__more film__more '>Lorem ipsum dolor sit amet consectetur.</p>
 			</div>
 		</>
 	)

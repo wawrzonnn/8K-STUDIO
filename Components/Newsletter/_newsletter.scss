@@ -57,6 +57,9 @@
 	&--title {
 		font-size: 2rem;
 		margin-bottom: 1rem;
+		@include small {
+			margin-top: 1.5rem;
+		}
 	}
 
 	&--text {
@@ -87,8 +90,11 @@
 	padding: 0.5rem;
 	cursor: pointer;
 	font-weight: 900;
-
-	// border-radius: 0.5rem;
+	@include small {
+		height: 2.5rem;
+		background-color: $light;
+	}
+	
 }
 
 .display {
