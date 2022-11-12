@@ -27,37 +27,36 @@ const Header = () => {
 					</div>
 				</div>
 				<nav className={`header__nav ${menuCheck}`}>
-					<a className='header__nav--item nav--item-1' href={'/'}>
-						HOME
-					</a>
+					<p className='header__nav--item nav--item-1'>HOME</p>
 					<Link href='/aboutus'>
-						<a className='header__nav--item' href={'/'}>
-							O NAS
-						</a>
+						<p className='header__nav--item'>O NAS</p>
 					</Link>
-
-					<a className='header__nav--item ' href={''}>
-						REPORTAŻ <span>SPORTOWY</span>
-					</a>
-					<a className='header__nav--item' href={'/'}>
-						PRODUKCJA <span>FILMÓW</span>
-					</a>
-					<a className='header__nav--item' href={'/'}>
-						USŁUGI <span>OPERATORSKIE</span>
-					</a>
-					<a className='header__nav--item' href={'/'}>
-						USŁUGI <span>LOTNICZE</span>
-					</a>
-					<a className='header__nav--item' href={'/'}>
-						POSTPRODUKCJA
-					</a>
-					<a className='header__nav--item' href={'/'}>
-						RENTAL
-					</a>
+					<Link href='/bikes'>
+						<p className='header__nav--item'>
+							REPORTAŻ <span>SPORTOWY</span>
+						</p>
+					</Link>
+					<Link href='/advertising'>
+						<p className='header__nav--item'>
+							PRODUKCJA <span>FILMÓW</span>
+						</p>
+					</Link>
+					<Link href='/steadycam'>
+						<p className='header__nav--item'>
+							USŁUGI <span>OPERATORSKIE</span>
+						</p>
+					</Link>
+					<Link href='/sky'>
+						<p className='header__nav--item'>
+							USŁUGI <span>LOTNICZE</span>
+						</p>
+					</Link>
+					<p className='header__nav--item'>POSTPRODUKCJA</p>
+					<Link href='/rental'>
+						<p className='header__nav--item'>RENTAL</p>
+					</Link>
 					<Link href='/contact'>
-						<a className='header__nav--item' href={'/'}>
-							KONTAKT
-						</a>
+						<p className='header__nav--item'>KONTAKT</p>
 					</Link>
 				</nav>
 				<div className='header__hamburger--box'>

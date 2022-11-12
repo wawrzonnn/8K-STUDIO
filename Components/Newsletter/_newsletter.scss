@@ -42,12 +42,12 @@
 	font-family: $monst;
 	font-size: 1.5rem;
 	font-weight: 900;
-    &:hover {
-        background-color: $dark;
-        color: #f1f3ce;
-        font-size: 2rem;
-        transition: 0.3s;
-    }
+	&:hover {
+		background-color: $dark;
+		color: #f1f3ce;
+		font-size: 2rem;
+		transition: 0.3s;
+	}
 }
 
 .newsletter__txt {

@@ -25,7 +25,7 @@ export default function Newsletter () {
 			email,
 		})
 
-		const res = await fetch('/api/hello', {
+		const res = await fetch('https://my-json-server.typicode.com/typicode/demo/posts', {
 			method: 'POST',
 			headers: {
 				Accept: 'application/json',
