@@ -5,7 +5,7 @@ const Film = () => {
 	return (
 		<>
 			<div className='global__box '>
-				<img className='video__image' src='/film.jpg'></img>
+				<img className='video__image' src='/film.jpg'/>
 				<video className='video__hero' src={'/film.mp4'} autoPlay loop muted />
 				<h2 className='video__hero--title1'>Lorem Ipsum</h2>
 				<h2 className='video__hero--title2'>Lorem Ipsum</h2>
@@ -22,7 +22,7 @@ const Film = () => {
 						<div className='global__image--parent'>
 							
 							<Link href='/advertising'>
-								<img className='global__images--img images__twice' src='/film6.jpg' alt='Nagrywanie filmu reklamowego'></img>
+								<img className='global__images--img images__twice' src='/film6.jpg' alt='Nagrywanie filmu reklamowego'/>
 							</Link>
 							<p className='global__title global__images--imgtxt'>Film Reklamowy</p>
 
@@ -32,7 +32,7 @@ const Film = () => {
 						</div>
 						<div className='global__image--parent'>
 						<Link href='/reportage'>
-								<img className='global__images--img images__twice' src='/film5.jpg'></img>
+								<img className='global__images--img images__twice' src='/film5.jpg'/>
 							</Link>
 							<p className='global__title global__images--imgtxt'>Reportaż</p>
 							<a href='' className='global__images--title'>

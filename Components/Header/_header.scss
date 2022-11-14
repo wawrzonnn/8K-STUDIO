@@ -2,7 +2,7 @@
 	width: 100%;
 	display: block;
 	position: fixed;
-	z-index: 999;
+	z-index: 998;
 	// position: relative;
 	background-color: $dark;
 	transition: ease height 0.5s;
@@ -91,24 +91,26 @@
 		background-color: transparent;
 	}
 	&--item {
+		position: relative;
 		opacity: 1;
 		color: white;
 		cursor: pointer;
 		margin: 0.8rem 0;
 		font-size: 1.3rem;
-		//letter-spacing: 1px;
+		max-width: 9.1rem;
 		text-decoration: none;
 		text-align: center;
 		font-family: $monst;
 		transition: ease margin 0.5s;
 		transition: ease font-size 0.5s;
+		padding: 1.5rem 0;
 		@include medium {
 			margin: 0.7rem;
 			font-size: 0.8rem;
 			font-weight: 200;
 		}
 		@include large {
-			margin: 1.8rem;
+			margin: 0 1.8rem;
 			font-size: 1rem;
 			font-weight: 200;
 		}
@@ -122,16 +124,40 @@
 	}
 }
 
-span {
-	display: block; //ustawić width elementom
-}
-
 .nav--item-1 {
 	@include small {
 		margin-top: 1rem;
 	}
 }
 
+.kolumna {
+	flex-direction: column;
+	text-align: center;
+	z-index: 999;
+}
+.drop:hover ~ p {
+	display: block;
+}
+.drop {
+	position: absolute;
+	display: none;
+	background-color: $dark;
+	top: 70px;
+}
+
+.header__nav--item:hover ~ .drop {
+	display: block;
+}
+.header__nav--item p:hover {
+	display: block;
+}
+.drop:hover {
+	display: block;
+}
+
+.hujj:hover {
+	display: block;
+}
 //---HAMBURGER---//
 .header__hamburger--box {
 	width: 100%;

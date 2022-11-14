@@ -22,7 +22,7 @@ const Sport = () => {
 					<div className='global__images--medium'>
 						<div className='global__image--parent'>
 							<Link href='/runs'>
-								<img className='global__images--img' src='/sport1.jpg'></img>
+								<img className='global__images--img' src='/sport1.jpg'/>
 							</Link>
 							<p className='global__title global__images--imgtxt'>Biegi</p>
 
@@ -32,7 +32,7 @@ const Sport = () => {
 						</div>
 						<div className='global__image--parent'>
 							<Link href='/bikes'>
-								<img className='global__images--img' src='/sport2.jpg'></img>
+								<img className='global__images--img' src='/sport2.jpg'/>
 							</Link>
 							<p className='global__title global__images--imgtxt'>Rowery</p>
 							<a href='' className='global__images--title'>
@@ -43,7 +43,7 @@ const Sport = () => {
 					<div className='global__images--medium'>
 						<div className='global__image--parent'>
 							<Link href='/triathlon'>
-								<img className='global__images--img' src='/sport3.jpg'></img>
+								<img className='global__images--img' src='/sport3.jpg'/>
 							</Link>
 							<p className='global__title global__images--imgtxt'>Triathlon</p>
 
@@ -53,7 +53,7 @@ const Sport = () => {
 						</div>
 						<div className='global__image--parent'>
 							<Link href='/other'>
-								<img className='global__images--img' src='/sport4.jpg'></img>
+								<img className='global__images--img' src='/sport4.jpg'/>
 							</Link>
 							<p className='global__title global__images--imgtxt'>Inne</p>
 

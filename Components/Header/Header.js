@@ -33,30 +33,54 @@ const Header = () => {
 					<Link href='/aboutus'>
 						<p className='header__nav--item'>O NAS</p>
 					</Link>
-					<Link href='/bikes'>
-						<p className='header__nav--item'>
-							REPORTAŻ <span>SPORTOWY</span>
-						</p>
-					</Link>
-					<Link href='/advertising'>
-						<p className='header__nav--item'>
-							PRODUKCJA <span>FILMÓW</span>
-						</p>
-					</Link>
-					<Link href='/steadycam'>
-						<p className='header__nav--item'>
-							USŁUGI <span>OPERATORSKIE</span>
-						</p>
-					</Link>
+					<div className='kolumna'>
+						<Link href='/bikes'>
+							<p className='header__nav--item'>REPORTAŻ SPORTOWY</p>
+						</Link>
+						<div class='drop'>
+							<p className='header__nav--item'>BIEGI</p>
+							<p className='header__nav--item'>ROWERY</p>
+							<p className='header__nav--item'>TRIATHLON</p>
+							<p className='header__nav--item'>INNE</p>
+						</div>
+					</div>
+					<div className='kolumna'>
+						<Link href='/advertising'>
+							<p className='header__nav--item'>PRODUKCJA FILMÓW</p>
+						</Link>
+						<div class='drop'>
+							<p className='header__nav--item'>FILM REKLAMOWY</p>
+							<p className='header__nav--item'>REPORTAŻ</p>
+						</div>
+					</div>
+					<div className='kolumna'>
+						<Link href='/steadycam'>
+							<p className='header__nav--item'>USŁUGI OPERATORSKIE</p>
+						</Link>
+						<div class='drop'>
+							<p className='header__nav--item'>ZDJĘCIA</p>
+							<p className='header__nav--item'>STEADYCAM</p>
+							<p className='header__nav--item'>LIVE STREAM</p>
+							<p className='header__nav--item'>HYPERLAPSE TIMELAPSE</p>
+						</div>
+					</div>
 					<Link href='/sky'>
-						<p className='header__nav--item'>
-							USŁUGI <span>LOTNICZE</span>
-						</p>
+						<p className='header__nav--item'>USŁUGI LOTNICZE</p>
 					</Link>
-					<p className='header__nav--item'>POSTPRODUKCJA</p>
+					<div className='kolumna'>
+						<Link href='/montage'>
+							<p className='header__nav--item'>POSTPRODUKCJA</p>
+						</Link>
+						<div class='drop'>
+							<p className='header__nav--item'>MONTAŻ</p>
+							<p className='header__nav--item'>KOREKCJA BARWNA</p>
+						</div>
+					</div>
+
 					<Link href='/rental'>
 						<p className='header__nav--item'>RENTAL</p>
 					</Link>
+
 					<Link href='/contact'>
 						<p className='header__nav--item'>KONTAKT</p>
 					</Link>
