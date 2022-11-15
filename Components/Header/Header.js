@@ -1,6 +1,10 @@
 import Link from 'next/link'
 import React from 'react'
 import { useState } from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faInstagram } from '@fortawesome/free-brands-svg-icons'
+import { faFacebook } from '@fortawesome/free-brands-svg-icons'
+import { faFlickr } from '@fortawesome/free-brands-svg-icons'
 
 const Header = () => {
 	const [navBtn, setnavBtn] = useState(false)
@@ -27,53 +31,87 @@ const Header = () => {
 					</div>
 				</div>
 				<nav className={`header__nav ${menuCheck}`}>
-					<Link href='/'>
+					<Link href='https://www.instagram.com/mountainguide_iml/'>
+						<FontAwesomeIcon className='header__icon header__icon--ig' icon={faInstagram}></FontAwesomeIcon>
+					</Link>
+					<Link href='https://www.facebook.com/8kstudiopl'>
+						<FontAwesomeIcon className='header__icon header__icon--fb' icon={faFacebook}></FontAwesomeIcon>
+					</Link>
+					<Link href='https://www.flickr.com/photos/154352174@N05/'>
+						<FontAwesomeIcon className='header__icon header__icon--fk' icon={faFlickr}></FontAwesomeIcon>
+					</Link>
+
+					<Link href='http://localhost:3001/'>
 						<p className='header__nav--item nav--item-1'>HOME</p>
 					</Link>
 					<Link href='/aboutus'>
 						<p className='header__nav--item'>O NAS</p>
 					</Link>
-					<div className='kolumna'>
-						<Link href='/bikes'>
+					<div className='header__column'>
+						<Link href='#sport'>
 							<p className='header__nav--item'>REPORTAŻ SPORTOWY</p>
 						</Link>
-						<div class='drop'>
-							<p className='header__nav--item'>BIEGI</p>
-							<p className='header__nav--item'>ROWERY</p>
-							<p className='header__nav--item'>TRIATHLON</p>
-							<p className='header__nav--item'>INNE</p>
+						<div class='header__drop header__drop--first'>
+							<Link href='runs'>
+								<p className='header__nav--item header__drop--item'>BIEGI</p>
+							</Link>
+							<Link href='bikes'>
+								<p className='header__nav--item header__drop--item'>ROWERY</p>
+							</Link>
+							<Link href='triathlon'>
+								<p className='header__nav--item header__drop--item'>TRIATHLON</p>
+							</Link>
+							<Link href='other'>
+								<p className='header__nav--item header__drop--item'>INNE</p>
+							</Link>
 						</div>
 					</div>
-					<div className='kolumna'>
-						<Link href='/advertising'>
+					<div className='header__column'>
+						<Link href='#film'>
 							<p className='header__nav--item'>PRODUKCJA FILMÓW</p>
 						</Link>
-						<div class='drop'>
-							<p className='header__nav--item'>FILM REKLAMOWY</p>
-							<p className='header__nav--item'>REPORTAŻ</p>
+						<div class='header__drop'>
+							<Link href='/advertising'>
+								<p className='header__nav--item header__drop--item'>FILM REKLAMOWY</p>
+							</Link>
+							<Link href='/reportage'>
+								<p className='header__nav--item header__drop--item'>REPORTAŻ</p>
+							</Link>
 						</div>
 					</div>
-					<div className='kolumna'>
-						<Link href='/steadycam'>
+					<div className='header__column'>
+						<Link href='#operator'>
 							<p className='header__nav--item'>USŁUGI OPERATORSKIE</p>
 						</Link>
-						<div class='drop'>
-							<p className='header__nav--item'>ZDJĘCIA</p>
-							<p className='header__nav--item'>STEADYCAM</p>
-							<p className='header__nav--item'>LIVE STREAM</p>
-							<p className='header__nav--item'>HYPERLAPSE TIMELAPSE</p>
+						<div class='header__drop'>
+							<Link href='/photos'>
+								<p className='header__nav--item header__drop--item'>ZDJĘCIA</p>
+							</Link>
+							<Link href='/steadycam'>
+								<p className='header__nav--item header__drop--item'>STEADYCAM</p>
+							</Link>
+							<Link href='livestream'>
+								<p className='header__nav--item header__drop--item'>LIVE STREAM</p>
+							</Link>
+							<Link href='hyperlapse'>
+								<p className='header__nav--item header__drop--item'>HYPERLAPSE TIMELAPSE</p>
+							</Link>
 						</div>
 					</div>
 					<Link href='/sky'>
 						<p className='header__nav--item'>USŁUGI LOTNICZE</p>
 					</Link>
-					<div className='kolumna'>
-						<Link href='/montage'>
+					<div className='header__column'>
+						<Link href='#production'>
 							<p className='header__nav--item'>POSTPRODUKCJA</p>
 						</Link>
-						<div class='drop'>
-							<p className='header__nav--item'>MONTAŻ</p>
-							<p className='header__nav--item'>KOREKCJA BARWNA</p>
+						<div class='header__drop'>
+							<Link href='/montage'>
+								<p className='header__nav--item header__drop--item'>MONTAŻ</p>
+							</Link>
+							<Link href='/colorcorrection'>
+								<p className='header__nav--item header__drop--item'>KOREKCJA BARWNA</p>
+							</Link>
 						</div>
 					</div>
 

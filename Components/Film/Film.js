@@ -8,7 +8,7 @@ const Film = () => {
 				<img className='video__image' src='/film.jpg'/>
 				<video className='video__hero' src={'/film.mp4'} autoPlay loop muted />
 				<h2 className='video__hero--title1'>Lorem Ipsum</h2>
-				<h2 className='video__hero--title2'>Lorem Ipsum</h2>
+				<h2 className='video__hero--title2' id='film'>Lorem Ipsum</h2>
 			</div>
 			<div className='global__box background__light'>
 				<h3 className='global__title'>PRODUKCJA FILMÓW</h3>

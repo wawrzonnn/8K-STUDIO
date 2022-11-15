@@ -1,24 +1,20 @@
 .header__box {
 	width: 100%;
-	display: block;
 	position: fixed;
 	z-index: 998;
-	// position: relative;
 	background-color: $dark;
 	transition: ease height 0.5s;
 	border-bottom: 1px solid $lightred;
 	@include small {
-		height: 12.5rem;
+		height: 9.5rem;
 	}
 
 	@include medium {
-		padding: 0.5rem;
 		position: fixed;
 		top: 0;
 		z-index: 300;
 	}
 	@include large {
-		padding: 0;
 		transition: 0.5s;
 	}
 }
@@ -51,19 +47,10 @@
 	align-items: center;
 	transform: rotate(7deg);
 }
-.header__logo--mid {
-	display: none;
-	width: 6rem;
-	height: 6rem;
-	margin-top: 0.7rem;
-	@include medium {
-		display: block;
-	}
-}
 
 .header__logo--small {
-	width: 8rem;
-	height: 8rem;
+	width: 5rem;
+	height: 5rem;
 	transition: 0.5s;
 	margin-top: 0.9rem;
 	@include medium {
@@ -79,8 +66,6 @@
 	flex-direction: column;
 	background-color: black;
 	opacity: 0.85;
-	// border-bottom: 1px solid $lightred;
-	//z-index: 999;
 	@include small {
 		display: none;
 	}
@@ -92,10 +77,8 @@
 	}
 	&--item {
 		position: relative;
-		opacity: 1;
 		color: white;
 		cursor: pointer;
-		margin: 0.8rem 0;
 		font-size: 1.3rem;
 		max-width: 9.1rem;
 		text-decoration: none;
@@ -103,61 +86,94 @@
 		font-family: $monst;
 		transition: ease margin 0.5s;
 		transition: ease font-size 0.5s;
-		padding: 1.5rem 0;
+		padding: 0.7rem;
+		justify-content: center;
+		align-items: center;
+		@include small {
+			max-width: 12rem;
+			text-align: center;
+		}
 		@include medium {
 			margin: 0.7rem;
 			font-size: 0.8rem;
 			font-weight: 200;
+			padding: 1rem 0;
 		}
 		@include large {
 			margin: 0 1.8rem;
 			font-size: 1rem;
 			font-weight: 200;
+			padding: 1.5rem 0;
 		}
-
 		&:hover {
 			color: $lightred;
-			@include small {
-				color: white;
-			}
+			scale: 1.03;
 		}
+	}
+}
+
+.header__icon {
+	position: absolute;
+	top: 0.6rem;
+	font-size: 2rem;
+	color: white;
+	cursor: pointer;
+	&--ig {
+		right: 1rem;
+	}
+	&--fb {
+		right: 4rem;
+	}
+	&--fk {
+		right: 7rem;
+	}
+	@include medium {
+		font-size: 0rem;
 	}
 }
 
 .nav--item-1 {
 	@include small {
-		margin-top: 1rem;
+		margin-top: 0.5rem;
 	}
 }
 
-.kolumna {
+.header__column {
 	flex-direction: column;
 	text-align: center;
 	z-index: 999;
 }
-.drop:hover ~ p {
-	display: block;
-}
-.drop {
+
+.header__drop {
+	padding-top: 1rem;
 	position: absolute;
 	display: none;
 	background-color: $dark;
 	top: 70px;
+	border-radius: 0 0px 5px 5px;
+	border-bottom: 1px solid $lightred;
+	border-right: 1px solid $lightred;
+	border-left: 1px solid $lightred;
+
+	&--first {
+		left: 28rem;
+	}
 }
 
-.header__nav--item:hover ~ .drop {
-	display: block;
+.header__drop--item {
+	padding: 0.6rem 0;
 }
-.header__nav--item p:hover {
-	display: block;
+
+.header__nav--item:hover ~ .header__drop {
+	@include large {
+		display: block;
+	}
 }
-.drop:hover {
+
+.header__drop:hover {
 	display: block;
 }
 
-.hujj:hover {
-	display: block;
-}
 //---HAMBURGER---//
 .header__hamburger--box {
 	width: 100%;
@@ -216,12 +232,12 @@
 	padding-bottom: 61%;
 	z-index: 2;
 	position: absolute; // niet dziala
-	//height: 100vh; jak rozciagnac opacity na cala wysokosc zawartosci
-	//z-index: 999;
 	@include medium {
 		display: flex;
 		flex-direction: row;
 		width: 100%;
-		background-color: transparent;
+		background-color: $dark;
+		opacity: 1;
+		padding-bottom: 0;
 	}
 }

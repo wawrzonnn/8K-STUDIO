@@ -44,7 +44,7 @@ export default function Newsletter () {
 				<div className='newsletter__xmark' onClick={xMarkNewsletter}>
 					X
 				</div>
-				<h2 className='newsletter__txt newsletter__txt--title'>Bądź na bieżąco!</h2>
+				<h2 className='newsletter__txt newsletter__txt--title'>BĄDŹ NA BIEŻĄCO!</h2>
 				<p className='newsletter__txt newsletter__txt--text'>
 					Zapisz się do newslettera i bądź na bieżąco z naszymi relacjami
 				</p>
