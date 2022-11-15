@@ -122,6 +122,9 @@
 	font-weight: 200;
 	padding: 0 4rem;
 	margin-bottom: 2rem;
+	@include small {
+		margin-bottom: 2rem;
+	}
 	@include medium {
 		width: 25rem;
 	}
@@ -225,4 +228,32 @@
 	@include large {
 		display: none;
 	}
+}
+
+.global__hidden--box {
+	@include small {
+		display: none;
+	}
+}
+
+.global__show {
+	display: flex;
+}
+
+.global__show--button {
+	@include small {
+		color: $lightred;
+		margin: 0;
+		font-weight: 200;
+	}
+}
+
+
+.global__show--arrow {
+font-size: 3rem;
+margin-bottom: 5rem;
+}
+
+.asdf {
+	display: block;
 }
