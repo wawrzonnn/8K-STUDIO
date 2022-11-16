@@ -6,11 +6,14 @@ import { faAngleDoubleDown } from '@fortawesome/free-solid-svg-icons'
 
 const Sport = () => {
 	const [showBtn, setshowBtn] = useState(false)
+	const [arrowBtn, setarrowBtn] = useState(false)
 
 	const showBtnClick = () => {
 		setshowBtn(show => !show)
+		setarrowBtn(arrow => !arrow)
 	}
-	let showCheck = showBtn ? 'asdf' : 'btnInactive'
+	let showToggle = showBtn ? 'global__show' : 'global__hidden'
+	let arrowToggle = arrowBtn ? 'global__arrow--show' : 'global__arrow--hidden'
 
 	return (
 		<>
@@ -30,14 +33,12 @@ const Sport = () => {
 					hendrerit. Aliquam gravida orci augue, vel ullamcorper magna commodo et.
 				</p>
 
-				<p className='global__title global__show--button' onClick={showBtnClick}>
-					ROZWIŃ
-				</p>
+				
 				<FontAwesomeIcon
-					className='global__show--button global__show--arrow fa-thin'
+					className={`global__show--button global__show--arrow ${arrowToggle}`}
 					icon={faAngleDoubleDown}
 					onClick={showBtnClick}></FontAwesomeIcon>
-				<div className={`global__hidden--box ${showCheck}`}>
+				<div className={`global__hidden--box ${showToggle}`}>
 					<div className='global__images--box'>
 						<div className='global__images--medium'>
 							<div className='global__image--parent'>

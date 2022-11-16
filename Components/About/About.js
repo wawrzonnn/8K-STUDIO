@@ -9,11 +9,10 @@ const About = () => {
 				<p className='global__content--text'>
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus consectetur quam non sapien rutrum, vel
 					dictum sapien scelerisque. Fusce feugiat dolor ut dolor rutrum faucibus. Sed dictum porttitor nisi molestie
-					hendrerit. Aliquam gravida orci augue, vel ullamcorper magna commodo et. Fusce consectetur, nisl volutpat
-					pharetra consectetur, massa sapien porta dolor
+					hendrerit. Aliquam gravida orci augue
 				</p>
 				<Link href='/aboutus'>
-					<p className='about__more'>SPRAWDŹ WIĘCEJ</p>
+					<p className='about__more'>WIĘCEJ</p>
 				</Link>
 			</div>
 		</>

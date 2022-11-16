@@ -4,8 +4,8 @@ import Link from 'next/link'
 const Sky = () => {
 	return (
 		<>
-			<div className='global__box'>
-				<img className='video__image operator__box--image' src='/dron.jpg'></img>
+			<div className='global__box'><Link href='/sky'>
+				<img className='video__image operator__box--image' src='/dron.jpg'></img></Link>
 				<video className='video__hero' src={'/dron.mp4'} autoPlay loop muted />
 				<h2 className='video__hero--title1'>Lorem Ipsum</h2>
 				<h2 className='video__hero--title2 sky__title2'>Lorem Ipsum</h2>
@@ -17,10 +17,10 @@ const Sky = () => {
 				<div className='global__images--box'>
 					<div className='global__images--medium'>
 						<div className='global__image--parent'>
-							<Link href='/sky'>
-								<img className='global__images--img images__twice' src='/dron.jpg'></img>
-							</Link>
-							<p className='global__title global__images--imgtxt'>Zdjęcia Lotnicze</p>
+							
+								{/* <img className='global__images--img images__twice' src='/dron.jpg'></img> */}
+							
+							{/* <p className='global__title global__images--imgtxt'>Zdjęcia Lotnicze</p> */}
 
 							<a href='' className='global__images--title'>
 								Więcej

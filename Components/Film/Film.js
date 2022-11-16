@@ -1,7 +1,20 @@
 import React from 'react'
 import Link from 'next/link'
+import { useState } from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faAngleDoubleDown } from '@fortawesome/free-solid-svg-icons'
+
 
 const Film = () => {
+	const [showBtn, setshowBtn] = useState(false)
+	const [arrowBtn, setarrowBtn] = useState(false)
+
+	const showBtnClick = () => {
+		setshowBtn(show => !show)
+		setarrowBtn(arrow => !arrow)
+	}
+	let showToggle = showBtn ? 'global__show' : 'global__hidden'
+	let arrowToggle = arrowBtn ? 'global__arrow--show' : 'global__arrow--hidden'
 	return (
 		<>
 			<div className='global__box '>
@@ -17,6 +30,11 @@ const Film = () => {
 					dictum sapien scelerisque. Fusce feugiat dolor ut dolor rutrum faucibus. Sed dictum porttitor nisi molestie
 					hendrerit.
 				</p>
+				<FontAwesomeIcon
+					className={`global__show--button global__show--arrow ${arrowToggle}`}
+					icon={faAngleDoubleDown}
+					onClick={showBtnClick}></FontAwesomeIcon>
+<div className={`global__hidden--box ${showToggle}`}>
 				<div className='global__images--box background__light'>
 					<div className='global__images--medium'>
 						<div className='global__image--parent'>
@@ -41,7 +59,7 @@ const Film = () => {
 						</div>
 					</div>
 				</div>
-				<p className='about__more film__more '>Lorem ipsum dolor sit amet consectetur.</p>
+				</div>
 			</div>
 		</>
 	)
