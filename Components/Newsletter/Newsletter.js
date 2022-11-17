@@ -9,7 +9,7 @@ export default function Newsletter () {
 	useEffect(() => {
 		setTimeout(() => {
 			setNewsletterDisplay('display')
-		}, 5000)
+		}, 10000)
 	}, [])
 
 	const xMarkNewsletter = () => {

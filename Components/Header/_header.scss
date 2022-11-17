@@ -113,9 +113,9 @@
 	}
 }
 
-.header__nav--itemtwice {
-	max-width: 9rem;
-}
+// .header__nav--itemtwice {
+// 	max-width: 9rem;
+// }
 
 .header__icon {
 	position: absolute;
@@ -187,7 +187,9 @@
 		max-width: 14rem;
 	}
 }
-
+// .huj {
+// 	max-width: 11rem;
+// }
 .header__nav--item:hover ~ .header__drop {
 	@include large {
 		display: block;
@@ -198,13 +200,13 @@
 	display: block;
 }
 
-.huj:hover ~ .header__drop {
+.header__dropdown--box:hover ~ .header__drop {
 	@include large {
 		display: block;
 	}
 }
 
-.huj {
+.header__dropdown--box {
 	display: flex;
 	flex-direction: row;
 	
@@ -220,27 +222,30 @@ font-size: 1.5rem;
 
 .header__dropicon--sport {
 	margin-top: 1.5rem;
+	// margin-left: -1rem;
 }
 
 .header__dropicon--operator {
 	margin-top: 1.7rem;
-	margin-left: 1.3rem;
+	// margin-left: 1rem;
 }
 
 .header__dropicon--production {
 margin-top: 0.9rem;
+margin-left: 0.3rem;
 }
 .header__dropicon--film {
-	top: 23rem;
-	right: 8.6rem
+	// top: 23rem;
+	// right: 8.3rem
 }
 
 .header__dropicon--operator {
-	top: 30rem;
-	right: 8rem;
+	// margin-left: -1rem;
 }
 
-
+.cipa {
+	margin-left: 1.6rem;
+}
 
 //---HAMBURGER---//
 .header__hamburger--box {

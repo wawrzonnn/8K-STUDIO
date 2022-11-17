@@ -14,7 +14,7 @@ const Header = () => {
 	const [filmMenu, setfilmMenu] = useState(false)
 	const [operatorMenu, setoperatorMenu] = useState(false)
 	const [productionMenu, setproductionMenu] = useState(false)
-	
+
 	const navBtnClick = () => {
 		setnavBtn(btn => !btn)
 		setnavMenu(menu => !menu)
@@ -49,8 +49,6 @@ const Header = () => {
 							src={'/produkcja-filmow-jelenia-gora.jpg'}
 							alt='8KSTUDIO.PL logo'
 						/>
-						{/* <FontAwesomeIcon icon={faEnvelope}/>
-						<FontAwesomeIcon icon="fa-brands fa-instagram" /> */}
 					</div>
 				</div>
 				<nav className={`header__nav ${menuCheck}`}>
@@ -71,13 +69,12 @@ const Header = () => {
 						<p className='header__nav--item'>O NAS</p>
 					</Link>
 					<div className='header__column'>
-						<div className='huj'>
+						<div className='header__dropdown--box'>
 							<p className='header__nav--item header__nav--itemtwice' onClick={sportToggle}>
 								REPORTAŻ SPORTOWY
 							</p>
-
 							<FontAwesomeIcon
-								className={`header__dropicon header__dropicon--sport {sportShow}`}
+								className={`header__dropicon header__dropicon--sport`}
 								icon={faAngleDown}></FontAwesomeIcon>
 						</div>
 						<div class={`header__drop header__drop--first ${sportShow}`}>
@@ -96,10 +93,11 @@ const Header = () => {
 						</div>
 					</div>
 					<div className='header__column'>
-						<div className='huj'>
-							
-								<p className='header__nav--item header__nav--itemtwice' onClick={filmToggle}>PRODUKCJA FILMÓW</p>
-							
+						<div className='header__dropdown--box'>
+							<p className='header__nav--item header__nav--itemtwice' onClick={filmToggle}>
+								PRODUKCJA FILMÓW
+							</p>
+
 							<FontAwesomeIcon
 								className='header__dropicon header__dropicon--sport'
 								icon={faAngleDown}></FontAwesomeIcon>
@@ -114,10 +112,10 @@ const Header = () => {
 						</div>
 					</div>
 					<div className='header__column'>
-						<div className='huj'>
-							<Link href='#operator'>
-								<p className='header__nav--item header__nav--itemtwice' onClick={operatorToggle}>USŁUGI OPERATORSKIE</p>
-							</Link>
+						<div className='header__dropdown--box'>
+								<p className='header__nav--item header__nav--itemtwice huj' onClick={operatorToggle}>
+									USŁUGI OPERATORSKIE
+								</p>
 							<FontAwesomeIcon
 								className='header__dropicon header__dropicon--operator'
 								icon={faAngleDown}></FontAwesomeIcon>
@@ -141,9 +139,11 @@ const Header = () => {
 						<p className='header__nav--item '>USŁUGI LOTNICZE</p>
 					</Link>
 					<div className='header__column'>
-						<div className='huj'>
+						<div className='header__dropdown--box'>
 							<Link href='#production'>
-								<p className='header__nav--item' onClick={productionToggle}>POSTPRODUKCJA</p>
+								<p className='header__nav--item cipa' onClick={productionToggle}>
+									POSTPRODUKCJA
+								</p>
 							</Link>
 							<FontAwesomeIcon
 								className='header__dropicon header__dropicon--production'
