@@ -198,16 +198,24 @@
 	display: block;
 }
 
+.huj:hover ~ .header__drop {
+	@include large {
+		display: block;
+	}
+}
+
 .huj {
 	display: flex;
 	flex-direction: row;
+	
 }
 
 .header__dropicon {
 	color: $light;
-	// position: absolute;
-	
-	font-size: 1.5rem;
+font-size: 1.5rem;
+@include medium {
+	display: none;
+}
 }
 
 .header__dropicon--sport {
@@ -222,15 +230,15 @@
 .header__dropicon--production {
 margin-top: 0.9rem;
 }
-// .header__dropicon--film {
-// 	top: 23rem;
-// 	right: 8.6rem
-// }
+.header__dropicon--film {
+	top: 23rem;
+	right: 8.6rem
+}
 
-// .header__dropicon--operator {
-// 	top: 30rem;
-// 	right: 8rem;
-// }
+.header__dropicon--operator {
+	top: 30rem;
+	right: 8rem;
+}
 
 
 
