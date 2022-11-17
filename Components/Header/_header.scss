@@ -90,7 +90,7 @@
 		justify-content: center;
 		align-items: center;
 		@include small {
-			max-width: 12rem;
+			max-width: 13rem;
 			text-align: center;
 			margin: 0.5rem;
 		}
@@ -111,6 +111,10 @@
 			scale: 1.03;
 		}
 	}
+}
+
+.header__nav--itemtwice {
+	max-width: 9rem;
 }
 
 .header__icon {
@@ -156,13 +160,32 @@
 	border-right: 1px solid $lightred;
 	border-left: 1px solid $lightred;
 
+	@include small {
+		// display: none;
+		position: relative;
+		top: 0;
+		// left: -1rem;
+		border: 0;
+		background: transparent;
+		padding: 0;
+		font-size: 0.5rem;
+		max-width: 65rem;
+	}
 	&--first {
 		left: 28rem;
+		@include small {
+			left: 0rem;
+		}
 	}
 }
 
 .header__drop--item {
 	padding: 0.6rem 0;
+	@include small {
+		padding: 0.3rem 0;
+		font-size: 1.1rem;
+		max-width: 14rem;
+	}
 }
 
 .header__nav--item:hover ~ .header__drop {
@@ -174,6 +197,42 @@
 .header__drop:hover {
 	display: block;
 }
+
+.huj {
+	display: flex;
+	flex-direction: row;
+}
+
+.header__dropicon {
+	color: $light;
+	// position: absolute;
+	
+	font-size: 1.5rem;
+}
+
+.header__dropicon--sport {
+	margin-top: 1.5rem;
+}
+
+.header__dropicon--operator {
+	margin-top: 1.7rem;
+	margin-left: 1.3rem;
+}
+
+.header__dropicon--production {
+margin-top: 0.9rem;
+}
+// .header__dropicon--film {
+// 	top: 23rem;
+// 	right: 8.6rem
+// }
+
+// .header__dropicon--operator {
+// 	top: 30rem;
+// 	right: 8rem;
+// }
+
+
 
 //---HAMBURGER---//
 .header__hamburger--box {

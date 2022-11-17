@@ -9,6 +9,7 @@
 @import '../Components/Footer/footer';
 @import './pages';
 @import '../Components/Contact/contact';
+@import '../Components/Sky/sky';
 
 .video__box {
 	width: 100%;
@@ -238,15 +239,14 @@
 	}
 }
 
-.global__show {
-	display: flex;
-}
-
 .global__show--button {
 	@include small {
 		color: $lightred;
 		margin: 0;
 		font-weight: 200;
+	}
+	@include medium {
+		display: none;
 	}
 }
 

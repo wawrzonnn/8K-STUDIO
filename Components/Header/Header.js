@@ -5,16 +5,39 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faInstagram } from '@fortawesome/free-brands-svg-icons'
 import { faFacebook } from '@fortawesome/free-brands-svg-icons'
 import { faFlickr } from '@fortawesome/free-brands-svg-icons'
+import { faAngleDown } from '@fortawesome/free-solid-svg-icons'
 
 const Header = () => {
 	const [navBtn, setnavBtn] = useState(false)
 	const [navMenu, setnavMenu] = useState(false)
+	const [sportMenu, setsportMenu] = useState(false)
+	const [filmMenu, setfilmMenu] = useState(false)
+	const [operatorMenu, setoperatorMenu] = useState(false)
+	const [productionMenu, setproductionMenu] = useState(false)
+	
 	const navBtnClick = () => {
 		setnavBtn(btn => !btn)
-		setnavMenu(Menu => !Menu)
+		setnavMenu(menu => !menu)
+	}
+
+	const sportToggle = () => {
+		setsportMenu(sport => !sport)
+	}
+	const filmToggle = () => {
+		setfilmMenu(film => !film)
+	}
+	const operatorToggle = () => {
+		setoperatorMenu(operator => !operator)
+	}
+	const productionToggle = () => {
+		setproductionMenu(production => !production)
 	}
 	let btnCheck = navBtn ? 'btnActive' : 'btnInactive'
 	let menuCheck = navMenu ? 'menuActive' : 'menuInactive'
+	let sportShow = sportMenu ? 'global__show' : 'global__hidden'
+	let filmShow = filmMenu ? 'global__show' : 'global__hidden'
+	let operatorShow = operatorMenu ? 'global__show' : 'global__hidden'
+	let productionShow = productionMenu ? 'global__show' : 'global__hidden'
 	return (
 		<>
 			<div className='header__box'>
@@ -41,17 +64,23 @@ const Header = () => {
 						<FontAwesomeIcon className='header__icon header__icon--fk' icon={faFlickr}></FontAwesomeIcon>
 					</Link>
 
-					<Link href='http://localhost:3001/'>
+					<Link href='https://8-k-studio-125i.vercel.app/'>
 						<p className='header__nav--item nav--item-1'>HOME</p>
 					</Link>
 					<Link href='/aboutus'>
 						<p className='header__nav--item'>O NAS</p>
 					</Link>
 					<div className='header__column'>
-						<Link href='#sport'>
-							<p className='header__nav--item'>REPORTAŻ SPORTOWY</p>
-						</Link>
-						<div class='header__drop header__drop--first'>
+						<div className='huj'>
+							<p className='header__nav--item header__nav--itemtwice' onClick={sportToggle}>
+								REPORTAŻ SPORTOWY
+							</p>
+
+							<FontAwesomeIcon
+								className={`header__dropicon header__dropicon--sport {sportShow}`}
+								icon={faAngleDown}></FontAwesomeIcon>
+						</div>
+						<div class={`header__drop header__drop--first ${sportShow}`}>
 							<Link href='runs'>
 								<p className='header__nav--item header__drop--item'>BIEGI</p>
 							</Link>
@@ -67,10 +96,15 @@ const Header = () => {
 						</div>
 					</div>
 					<div className='header__column'>
-						<Link href='#film'>
-							<p className='header__nav--item'>PRODUKCJA FILMÓW</p>
-						</Link>
-						<div class='header__drop'>
+						<div className='huj'>
+							
+								<p className='header__nav--item header__nav--itemtwice' onClick={filmToggle}>PRODUKCJA FILMÓW</p>
+							
+							<FontAwesomeIcon
+								className='header__dropicon header__dropicon--sport'
+								icon={faAngleDown}></FontAwesomeIcon>
+						</div>
+						<div class={`header__drop ${filmShow}`}>
 							<Link href='/advertising'>
 								<p className='header__nav--item header__drop--item'>FILM REKLAMOWY</p>
 							</Link>
@@ -80,10 +114,15 @@ const Header = () => {
 						</div>
 					</div>
 					<div className='header__column'>
-						<Link href='#operator'>
-							<p className='header__nav--item'>USŁUGI OPERATORSKIE</p>
-						</Link>
-						<div class='header__drop'>
+						<div className='huj'>
+							<Link href='#operator'>
+								<p className='header__nav--item header__nav--itemtwice' onClick={operatorToggle}>USŁUGI OPERATORSKIE</p>
+							</Link>
+							<FontAwesomeIcon
+								className='header__dropicon header__dropicon--operator'
+								icon={faAngleDown}></FontAwesomeIcon>
+						</div>
+						<div class={`header__drop ${operatorShow}`}>
 							<Link href='/photos'>
 								<p className='header__nav--item header__drop--item'>ZDJĘCIA</p>
 							</Link>
@@ -99,13 +138,18 @@ const Header = () => {
 						</div>
 					</div>
 					<Link href='/sky'>
-						<p className='header__nav--item'>USŁUGI LOTNICZE</p>
+						<p className='header__nav--item '>USŁUGI LOTNICZE</p>
 					</Link>
 					<div className='header__column'>
-						<Link href='#production'>
-							<p className='header__nav--item'>POSTPRODUKCJA</p>
-						</Link>
-						<div class='header__drop'>
+						<div className='huj'>
+							<Link href='#production'>
+								<p className='header__nav--item' onClick={productionToggle}>POSTPRODUKCJA</p>
+							</Link>
+							<FontAwesomeIcon
+								className='header__dropicon header__dropicon--production'
+								icon={faAngleDown}></FontAwesomeIcon>
+						</div>
+						<div class={`header__drop ${productionShow}`}>
 							<Link href='/montage'>
 								<p className='header__nav--item header__drop--item'>MONTAŻ</p>
 							</Link>

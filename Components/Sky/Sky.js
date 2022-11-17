@@ -23,7 +23,7 @@ const Sky = () => {
 							{/* <p className='global__title global__images--imgtxt'>Zdjęcia Lotnicze</p> */}
 
 							<a href='' className='global__images--title'>
-								Więcej
+								WIĘCEJ
 							</a>
 						</div>
 					</div>
