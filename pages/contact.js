@@ -21,8 +21,12 @@ const contact = () => {
 					<input className='newsletter__submit--email' type={'text'} placeholder={'E-mail'}></input>
 					<input className='newsletter__submit--email' type={'text'} placeholder={'Telefon'}></input>
 				</div>
-
-				<input className='newsletter__submit--email' type={'textarea'} placeholder={'Wiadomość'} col='10' rows='10'></input>
+				<textarea
+						className='newsletter__submit--email contact__textarea'
+						type={'textarea'}
+						placeholder={'Wiadomość'}
+						rows={7}
+						cols={7}/>
 			</div>
 
 			<button className='newsletter__submit--btn'>WYŚLIJ</button></div>

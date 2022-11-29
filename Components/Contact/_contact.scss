@@ -1,14 +1,25 @@
 .contact__input--box {
-	// display: flex;
+	display: flex;
 	justify-content: center;
 	align-items: center;
+	margin-bottom: 2rem;
 	flex-direction: column;
+	@include medium {
+		flex-direction: row;
+	}
 }
 
 .contact__input--boxsmall {
+	display: flex;
 	flex-direction: column;
 }
 
 .contact__submit {
 	margin-bottom: 3rem;
+}
+
+.contact__textarea {
+	@include medium {
+		width: 25rem;
+	}
 }
